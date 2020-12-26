@@ -33,18 +33,20 @@ Activate the virtual env
 ```
 . venv/bin/activate
 ```
-Create a file [requirements.txt](https://github.com/alexandrajulius/pythonKatas/blob/master/requirements.txt) and add the favoured packages to it. For now those will be:
+
+## Install packages on your project
+Create a file [requirements.txt](https://github.com/alexandrajulius/pythonKatas/blob/master/requirements.txt) and add your favourite packages to it. For now those will be:
 * **pytest**: unit tests
 * **pyhamcrest**: matcher objects
 * **flake8**, **mypy**: linters / static analysis / type annotation checks
 
-## Install the required packages on your project
+Install the packages with
 ```
 pip install -r requirements.txt
 ```
-By running the above command you will install the above packages only for your project. In this way you can provide different versions per project.
+By running the this command the above packages will be installed only on your project. In this way you can provide different versions per project.
 
-Add the `venv` directory to your `.gitignore`, instead users who will work on your project will pull `requirements.txt` from your repository and install all required libraries with the above command.
+Add the created `venv` directory to your `.gitignore`. Users who will work on your project will pull the `requirements.txt` from your repository and install all required packages with the above command.
 
 ## How to test
 Run the test suites in your root directory
