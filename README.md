@@ -37,7 +37,7 @@ Activate the virtual env
 ## Install packages on your project
 Create a file [requirements.txt](https://github.com/alexandrajulius/pythonKatas/blob/master/requirements.txt) and add your favourite packages to it. For now those will be:
 * **pytest**: unit tests
-* **pyhamcrest**: matcher objects
+* **pyhamcrest**: matcher objects in assert statements
 * **flake8**, **mypy**: linters / static analysis / type annotation checks
 
 Install the packages with
