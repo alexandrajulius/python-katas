@@ -46,7 +46,7 @@ pip install -r requirements.txt
 ```
 By running the this command the above packages will be installed only on your project. In this way you can provide different versions per project.
 
-Add the created `venv` directory to your `.gitignore`. Users who will work on your project will pull the `requirements.txt` from your repository and install all required packages with the above command.
+Add the created `venv` directory to your `.gitignore`. Developers who will work on your project will pull the `requirements.txt` from your repository and install all required packages with the above command.
 
 ## How to test
 Run the test suites in your root directory
