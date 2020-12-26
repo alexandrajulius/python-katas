@@ -11,11 +11,15 @@ brew install python3
 Use python in the command line
 ```
 python3 
-```
-Exit with
-```
 quit()
 ```
+Or play with it on [Jupyter Notebook](https://jupyter.org/install) preferably on your local
+```
+pip install notebook
+jupyter notebook
+```
+Then in your browser on [http://localhost:8888/](http://localhost:8888/) go to **New** -> **Python3** and start coding without tests :)
+
 ## Install a virtual env
 ```
 pip3 install virtualenv
