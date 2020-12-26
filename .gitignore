@@ -1,0 +1,9 @@
+ggrep.py
+test_ggrep.py
+assets
+venv
+.vscode
+.pytest_cache
+.mypy_cache/
+.vscode/
+__pycache__/
