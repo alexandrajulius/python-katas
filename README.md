@@ -52,7 +52,7 @@ Add the created `venv` directory to your `.gitignore`. Users who will work on yo
 Run the test suites in your root directory
 ```
 venv/bin/pytest -vvv
-venv/bin/pytest test_binary_search.py -vvv
+venv/bin/pytest binary_search/test_binary_search.py -vvv
 ```
 
 ## Author Contact
