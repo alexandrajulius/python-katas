@@ -8,10 +8,11 @@ Go to any directory and type
 ```
 $ brew install python3
 ```
-Use Python in the command line (and find joy in reading the Zen of Python by Tim Peters)
+Use Python in the command line 
 ```
 $ python3 
 >>> import this
+(find joy in reading the Zen of Python by Tim Peters)
 >>> quit()
 ```
 Or play with Python on [Jupyter Notebook](https://jupyter.org/install) preferably on your local
