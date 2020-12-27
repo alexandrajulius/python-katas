@@ -12,7 +12,7 @@ Use Python in the command line
 ```
 $ python3 
 >>> import this
-(find joy in reading the Zen of Python by Tim Peters)
+(find joy in reading the Zen of Python)
 >>> quit()
 ```
 Or play with Python on [Jupyter Notebook](https://jupyter.org/install) preferably on your local
