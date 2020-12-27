@@ -6,36 +6,36 @@ This repository provides some simple code katas in Python and an instruction on 
 ## Install python
 Go to any directory and type
 ```
-brew install python3
+$ brew install python3
 ```
 Use python in the command line
 ```
-python3 
+$ python3 
 quit()
 ```
 Or play with it on [Jupyter Notebook](https://jupyter.org/install) preferably on your local
 ```
-pip install notebook
-jupyter notebook
+$ pip install notebook
+$ jupyter notebook
 ```
 Then in your browser on [http://localhost:8888/](http://localhost:8888/) go to **New** -> **Python3** and start coding without tests :)
 
 ## Install a virtual env
 ```
-pip3 install virtualenv
+$ pip3 install virtualenv
 ```
 Create your project directory
 ```
-mkdir projectname
-cd projectname
+$ mkdir projectname
+$ cd projectname
 ```
 Create a directory that holds all libraries of the project, call it venv
 ```
-virtualenv -p python3 venv
+$ virtualenv -p python3 venv
 ```
 Activate the virtual env
 ```
-. venv/bin/activate
+$ . venv/bin/activate
 ```
 
 ## Install packages on your project
@@ -46,7 +46,7 @@ Create a file [requirements.txt](https://github.com/alexandrajulius/pythonKatas/
 
 Install the packages with
 ```
-pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 By running the this command the above packages will be installed only on your project. In this way you can provide different versions per project.
 
@@ -55,8 +55,8 @@ Add the created `venv` directory to your `.gitignore`. Developers who will work 
 ## How to test
 Run the test suites in your root directory
 ```
-venv/bin/pytest -vvv
-venv/bin/pytest binary_search/test_binary_search.py -vvv
+$ venv/bin/pytest -vvv
+$ venv/bin/pytest binary_search/test_binary_search.py -vvv
 ```
 
 ## Author Contact
