@@ -1,5 +1,5 @@
 # Python Katas
-This repository provides some simple code katas in Python and an instruction on how to set up a python project with a testing environment on your local (mac).
+This repository provides some simple code katas in Python and an instruction on how to set up a Python project with a testing environment on your local (mac).
 
 # Usage
 
@@ -8,19 +8,20 @@ Go to any directory and type
 ```
 $ brew install python3
 ```
-Use python in the command line
+Use Python in the command line (and find joy in reading the Zen of Python by Tim Peters)
 ```
 $ python3 
-quit()
+>>> import this
+>>> quit()
 ```
-Or play with it on [Jupyter Notebook](https://jupyter.org/install) preferably on your local
+Or play with Python on [Jupyter Notebook](https://jupyter.org/install) preferably on your local
 ```
 $ pip install notebook
 $ jupyter notebook
 ```
 Then in your browser on [http://localhost:8888/](http://localhost:8888/) go to **New** -> **Python3** and start coding without tests :)
 
-## Install a virtual env
+## Install a virtual environment
 ```
 $ pip3 install virtualenv
 ```
@@ -29,7 +30,7 @@ Create your project directory
 $ mkdir projectname
 $ cd projectname
 ```
-Create a directory that holds all libraries of the project, call it venv
+Inside your project directory create a virtual environment (that is a directory `venv` where all libraries of your project live)
 ```
 $ virtualenv -p python3 venv
 ```
