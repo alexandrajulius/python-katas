@@ -3,7 +3,7 @@ This repository provides some simple code katas in Python and an instruction on 
 
 # Usage
 
-## Install python
+## Install Python
 Go to any directory and type
 ```
 $ brew install python3
@@ -41,9 +41,12 @@ $ . venv/bin/activate
 
 ## Install packages on your project
 Create a file [requirements.txt](https://github.com/alexandrajulius/pythonKatas/blob/master/requirements.txt) and add your favourite packages to it. For now those will be:
-* **pytest**: unit tests
+* **pytest**: unit test framework
 * **pyhamcrest**: matcher objects in assert statements
-* **flake8**, **mypy**: linters / static analysis / type annotation checks
+* **flake8**: static analysis / linters
+* **mypy**: type annotation checks 
+
+(`mypy` validates simple types such as `int`, `str`, `float`, `bool` out of the box. To validate more complex types such as `list`, `tuple`, `dict`, we have to import the types from the build-in library in the code, e.g. `from typing import Tuple`.)
 
 Install the packages with
 ```
