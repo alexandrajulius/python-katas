@@ -47,7 +47,7 @@ Create a file [requirements.txt](https://github.com/alexandrajulius/pythonKatas/
 * **flake8**: static analysis / linters
 * **mypy**: type annotation checks 
 
-(`mypy` validates simple types such as `int`, `str`, `float`, `bool` out of the box. To validate more complex types such as `list`, `tuple`, `dict`, we have to import the types from the build-in library in the code, e.g. `from typing import Tuple`.)
+(`mypy` validates simple types such as `int`, `str`, `float`, `bool` out of the box. To validate more complex types such as `list`, `tuple`, `dict`, we have to import the types from the built-in library in the code, e.g. `from typing import Tuple`.)
 
 Install the packages with
 ```
@@ -62,6 +62,11 @@ Run the test suites in your root directory
 ```
 $ venv/bin/pytest -vvv
 $ venv/bin/pytest binary_search/test_binary_search.py -vvv
+```
+Pytest will show print output from your code in the command line only on test failure. 
+You can disable per-test capturing with `-s`
+```
+$ venv/bin/pytest -s
 ```
 
 ## Author Contact
