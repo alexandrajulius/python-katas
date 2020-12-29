@@ -53,7 +53,7 @@ Install the packages with
 ```
 $ pip install -r requirements.txt
 ```
-By running the this command the above packages will be installed only on your project. In this way you can provide different versions per project.
+By running this command the above packages will be installed only on your project. In this way you can provide different versions per project.
 
 Add the created `venv` directory to your `.gitignore`. Developers who will work on your project will pull the `requirements.txt` from your repository and install all required packages with the above command.
 
