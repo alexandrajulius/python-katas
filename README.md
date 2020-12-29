@@ -47,7 +47,7 @@ Create a file [requirements.txt](https://github.com/alexandrajulius/pythonKatas/
 * **flake8**: static analysis / linters
 * **mypy**: type annotation checks 
 
-(`mypy` validates simple types such as `int`, `str`, `float`, `bool` out of the box. To validate more complex types such as `list`, `tuple`, `dict`, we have to import the types from the built-in library in the code, e.g. `from typing import Tuple`.)
+(`mypy` validates types and can be pretty annoying sometimes. You can disable it with `# type: ignore` where ever needed. But in general, type checks make sense of course. `mypy` validates simple types such as `int`, `str`, `float`, `bool` out of the box. To validate more complex types such as `list`, `tuple`, `dict`, we have to import the types from the built-in library in the code, e.g. `from typing import Tuple`.)
 
 Install the packages with
 ```
