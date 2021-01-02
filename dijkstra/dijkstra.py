@@ -1,6 +1,13 @@
 # Dijkstra's shortest path algorithm:
 # In an undirected, weighted graph find the cheapest path 
 # from a given start node to a given end node.
+#
+# For each vertex find the distance to its neighbors and add it to the already taken path.
+# Store the smaller distance as new distance. 
+# Add the visited vertex to the list of visited nodes. 
+# Stop when the end vertex is contained in the list of visited nodes.
+#
+# Time Complexity: O(|V|^2)
 
 from typing import List, Dict, Any
 from collections import namedtuple

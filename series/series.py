@@ -27,8 +27,8 @@ def series(digits:str, series:int) -> List[str]:
         raise ValueError()
     if not bool(re.match(r'^[0-9]+$', digits)):
         raise ValueError()   
-    slider = []
-    for start in range(len(digits) - series + 1):
-        slider.append(digits[start:start + series])
-    return slider
-    #return [digits[start:start + series] for start in range(len(digits) - series + 1)]
+    #slider = []
+    #for start in range(len(digits) - series + 1):
+    #    slider.append(digits[start:start + series])
+    #return slider
+    return [digits[start:start + series] for start in range(len(digits) - series + 1)]
