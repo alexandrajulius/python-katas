@@ -19,12 +19,8 @@ def test_binary_search_returns_first_occurence_of_item():
 def test_binary_search_returns_first_occurence_of_item_from_longer_list():
     assert_that(find('m', ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'l', 'm', 'm', 'o', 'p']), equal_to(11))
 
-def test_binary_search_finds_item():
+def test_binary_search_finds_item_c():
     assert_that(find('c', ['a', 'b', 'c', 'd']), equal_to(2))
 
-def test_binary_search_finds_items_bla():
+def test_binary_search_finds_items_d():
     assert_that(find('d', ['a', 'b', 'c', 'd']), equal_to(3))
-
-def test_binary_search_finds_items_blarg():
-    assert_that(find('c', ['a', 'c', 'd', 'g']), equal_to(1))
-

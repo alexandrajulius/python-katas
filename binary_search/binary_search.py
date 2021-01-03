@@ -1,16 +1,4 @@
-# Implement a binary search algorithm.
-# Searching a sorted collection is a common task. 
-# A dictionary is a sorted list of word definitions. 
-# Given a word, one can find its definition. 
-# A telephone book is a sorted list of people's names, addresses, 
-# and telephone numbers. Knowing someone's name allows one to quickly 
-# find their telephone number and address.
-
-# If the list to be searched contains more than a few items 
-# (a dozen, say) a binary search will require far fewer comparisons 
-# than a linear search, but it imposes the requirement that the list be sorted.
-
-# In computer science, a binary search or half-interval search algorithm 
+# A binary search or half-interval search algorithm 
 # finds the position of a specified input value (the search "key") 
 # within an array sorted by key value.
 
