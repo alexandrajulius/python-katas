@@ -1,16 +1,17 @@
 # Hoare's quicksort algorithm:
-# Quicksort is a divide-and-conquer algorithm. It works by selecting a 'pivot' element 
-# from the array and partitioning the other elements into two sub-arrays, 
+# Quicksort is a divide-and-conquer algorithm that selects a 'pivot' element 
+# from the array (in this case always the last element) and 
+# partitions the other elements into two sub-arrays, 
 # according to whether they are less than or greater than the pivot. 
-# The pivot value will then be placed between the higher and the lower range
+# Afterwards, the pivot value will be placed between the higher and the lower range
 # and never be touched again.
 # The sub-arrays are then sorted recursively.
 # 
 # Time Complexity: 
-# Best and Average Case: O(nlog(n))
-# Worst Case: O(n^2)
+# Best and Average Case: O(n*log(n))
+# Worst Case (if the array is already sorted): O(n^2)
 
-from typing import List, Dict, Any
+from typing import List
 from pprint import pprint
 
 def quicksort(input:List[int], lower_index:int, higher_index:int) -> List[int]:

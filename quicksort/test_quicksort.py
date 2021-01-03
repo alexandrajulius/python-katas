@@ -1,4 +1,4 @@
-from hamcrest import assert_that, calling, equal_to, raises
+from hamcrest import assert_that, equal_to
 from quicksort import quicksort
 
 def test_sorts_empty_array():
