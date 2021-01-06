@@ -49,9 +49,12 @@ def edit_distance(string1:str, string2:str) -> int:
                 substitutionCost = 1
 
             distance_matrix[i, j] = min(
-                distance_matrix[i - 1, j] + 1,                # deletion
-                distance_matrix[i, j-1] + 1,                  # insertion
-                distance_matrix[i-1, j-1] + substitutionCost  # substitution
-                )
+                distance_matrix[i - 1, j] + 1,                   # deletion
+                distance_matrix[i, j - 1] + 1,                   # insertion
+                distance_matrix[i - 1, j - 1] + substitutionCost # substitution
+            )
+
+    print('')
+    print(distance_matrix)
 
     return distance_matrix[n, m]
