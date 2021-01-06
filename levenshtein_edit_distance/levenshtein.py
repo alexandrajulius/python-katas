@@ -43,7 +43,7 @@ def edit_distance(string1:str, string2:str) -> int:
 
     for i in range(1, n + 1):
         for j in range(1, m + 1):
-            if string1[i-1] == string2[j-1]:
+            if string1[i - 1] == string2[j - 1]:
                 substitutionCost = 0
             else:
                 substitutionCost = 1
