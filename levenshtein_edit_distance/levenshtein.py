@@ -54,7 +54,4 @@ def edit_distance(string1:str, string2:str) -> int:
                 distance_matrix[i - 1, j - 1] + substitutionCost # substitution
             )
 
-    print('')
-    print(distance_matrix)
-
     return distance_matrix[n, m]
