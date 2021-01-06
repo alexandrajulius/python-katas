@@ -22,7 +22,7 @@
 # and return those as an autocorrection suggestion.
 #
 # Moreover, Levenshtein's algorithm is a common example for dynamic programming, 
-# since we do not re-calculate all distances between the letters file finding the minimal
+# since we do not re-calculate all distances between the letters while finding the minimal
 # distance, but store them in a matrix.
 
 import numpy as np
