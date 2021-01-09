@@ -43,7 +43,7 @@ In your root directory, create a file [requirements.txt](https://github.com/alex
 * **flake8**: static analysis / linters
 * **mypy**: type annotation checks 
 
-(`mypy` validates types and can be pretty annoying sometimes. You can disable it with `# type: ignore` where ever needed (see [example](https://github.com/alexandrajulius/python-katas/blob/master/dijkstra/dijkstra.py#L20)). But in general, type checks make sense of course. Out of the box, `mypy` validates simple types such as `int`, `str`, `float`, `bool`. To validate more complex types (`list`, `tuple`, `dict`, ..) we have to import the types from the built-in library in the code, e.g. `from typing import Tuple`.)
+(`mypy` validates types and can be pretty annoying sometimes. You can disable it with `# type: ignore` where ever needed (see [example](https://github.com/alexandrajulius/python-katas/blob/master/dijkstra_shortest_path/dijkstra.py#L27)). But in general, type checks make sense of course. Out of the box, `mypy` validates simple types such as `int`, `str`, `float`, `bool`. To validate more complex types (`list`, `tuple`, `dict`, ..) we have to import the types from the built-in library in the code, e.g. `from typing import Tuple`.)
 
 Install the packages with
 ```
