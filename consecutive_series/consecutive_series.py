@@ -18,7 +18,7 @@
 from typing import List
 import re
 
-def series(digits:str, series:int) -> List[str]:
+def consecutive_series(digits:str, series:int) -> List[str]:
     if not digits:
         raise ValueError()
     if series < 1:
