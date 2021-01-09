@@ -23,11 +23,11 @@ $ jupyter notebook
 Then in your browser on [http://localhost:8888/](http://localhost:8888/) go to **New** -> **Python3** and start coding without tests :)
 
 ## Install a virtual environment
-In your project directory install virtualenv
+Install the virtualenv
 ```
 $ pip3 install virtualenv
 ```
-Create the virtual environment (that is a directory `venv` where all libraries of your project live)
+In your project directory, create the virtual environment (that is a directory `venv` where all libraries of your project live)
 ```
 $ virtualenv -p python3 venv
 ```
