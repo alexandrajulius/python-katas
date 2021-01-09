@@ -4,7 +4,7 @@ This repository provides some simple code katas in Python and an instruction on 
 # Usage
 
 ## Install Python
-Go to any directory and type
+Location agnostic type
 ```
 $ brew install python3
 ```
