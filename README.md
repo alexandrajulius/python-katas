@@ -17,7 +17,7 @@ $ python3 
 ```
 Or play with Python on [Jupyter Notebook](https://jupyter.org/install) preferably on your local
 ```
-$ pip install notebook
+$ pip3 install notebook
 $ jupyter notebook
 ```
 Then in your browser on [http://localhost:8888/](http://localhost:8888/) go to **New** -> **Python3** and start coding without tests :)
@@ -40,10 +40,8 @@ $ . venv/bin/activate
 In your root directory, create a file [requirements.txt](https://github.com/alexandrajulius/pythonKatas/blob/master/requirements.txt) and add your favourite packages to it. For now those will be:
 * **pytest**: unit test framework
 * **pyhamcrest**: matcher objects in assert statements
-* **flake8**: static analysis / linters
+* **flake8**: syntax checks / linter
 * **mypy**: type annotation checks 
-
-(`mypy` validates types and can be pretty annoying sometimes. You can disable it with `# type: ignore` where ever needed (see [example](https://github.com/alexandrajulius/python-katas/blob/master/dijkstra_shortest_path/dijkstra.py#L27)). But in general, type checks make sense of course. Out of the box, `mypy` validates simple types such as `int`, `str`, `float`, `bool`. To validate more complex types (`list`, `tuple`, `dict`, ..) we have to import the types from the built-in library in the code, e.g. `from typing import Tuple`.)
 
 Install the packages with
 ```
@@ -52,6 +50,13 @@ $ pip install -r requirements.txt
 By running this command the above packages will be installed only on your project. In this way you can provide different versions per project.
 
 Add the created `venv` directory to your `.gitignore`. Developers who will work on your project will pull the `requirements.txt` from your repository and install all required packages with the above command.
+
+### Notes on usage
+#### Flake8
+When opening your project in VSCode for the first time, your IDE will ask you to install a linter. Click `Select Linter` and chose `Flake8`.
+
+#### Mypy
+`mypy` validates types and can be pretty annoying sometimes. You can disable it with `# type: ignore` where ever needed (see [example](https://github.com/alexandrajulius/python-katas/blob/master/dijkstra_shortest_path/dijkstra.py#L27)). But in general, type checks make sense of course. Out of the box, `mypy` validates simple types such as `int`, `str`, `float`, `bool`. To validate more complex types (`list`, `tuple`, `dict`, ..) we have to import the types from the built-in library in the code, e.g. `from typing import Tuple`.
 
 ## How to test
 Run the test suites in your root directory
