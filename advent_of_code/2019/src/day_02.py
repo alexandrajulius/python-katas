@@ -1,3 +1,4 @@
+# https://adventofcode.com/2019/day/2
 # An Intcode program is a list of integers separated by commas (like 1,0,0,3,99). 
 # To run one, start by looking at the first integer (called position 0). 
 # Here, you will find an opcode - either 1, 2, or 99. The opcode indicates 
@@ -22,7 +23,7 @@
 # forward 4 positions.
 
 
-from typing import List
+from typing import List, Generator
 import re
 
 def run(intcode:List[int]) -> List[int]:
@@ -44,6 +45,5 @@ def execute_chunk(group:List[int], intcode:List[int]) -> List[int]:
     return intcode
 
 
-# return type generator?
-def chunker(seq:List[int], size:int):
+def chunker(seq:List[int], size:int) -> Generator[List[int], None, None]:
     return (seq[pos:pos + size] for pos in range(0, len(seq), size))
