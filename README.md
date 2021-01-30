@@ -70,5 +70,26 @@ You can disable per-test capturing with `-s`
 $ venv/bin/pytest -s
 ```
 
+### Fixtures
+Store a fixture.txt file in your `/tests/fixtures` directory. 
+In your test_example.py use the pytest `fixture` decorator to create a method 
+that reads the file and returns its content. Pass this method as an
+argument into your test method.
+
+Use the following code to provide fixtures in your test:
+```
+import pytest
+
+@pytest.fixture
+def fixture_content():
+    with open("tests/fixtures/fixture.txt") as f:
+        return f.read()
+        
+def test_runs_example(fixture_content):
+    expected = "expected output"
+    actual = run(fixture_content)
+    assert_that(actual, equal_to(expected))
+```
+
 ## Author Contact
 [alexandra.julius@gmail.com](mailto:alexandra.julius@gmail.com)
