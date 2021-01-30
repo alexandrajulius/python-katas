@@ -8,3 +8,5 @@ venv
 .vscode/
 __pycache__/
 staircases/
+.ipynb_checkpoints
+Untitled.ipynb
