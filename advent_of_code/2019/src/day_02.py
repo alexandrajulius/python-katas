@@ -1,4 +1,5 @@
 # https://adventofcode.com/2019/day/2 (part 1)
+# --- Part One ---
 # An Intcode program is a list of integers separated by commas (like 1,0,0,3,99). 
 # To run one, start by looking at the first integer (called position 0). 
 # Here, you will find an opcode - either 1, 2, or 99. The opcode indicates 
