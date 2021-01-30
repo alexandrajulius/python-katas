@@ -71,8 +71,8 @@ $ venv/bin/pytest -s
 ```
 
 ### Fixtures
-Store a fixture.txt file in your `/tests/fixtures` directory. 
-In your [test_example.py](https://github.com/alexandrajulius/python-katas/blob/master/advent_of_code/2019/tests/unit/test_day_02.py) use the pytest `fixture` decorator to create a method that reads the file and returns its content. Pass this method as an
+Store your fixture file as [/tests/fixtures/fixture.txt](https://github.com/alexandrajulius/python-katas/blob/master/advent_of_code/2019/tests/fixtures/day_02.txt). 
+In your [test_example.py](https://github.com/alexandrajulius/python-katas/blob/master/advent_of_code/2019/tests/unit/test_day_02.py) use pytest's `fixture` decorator to create a method that reads the file and returns its content. Pass this method as an
 argument into your test method.
 
 Use the following code to provide fixtures in your test:
@@ -89,6 +89,8 @@ def test_runs_example(fixture_content):
     actual = run(fixture_content)
     assert_that(actual, equal_to(expected))
 ```
+
+Using Python's Content Manager (`with` statement) will open the fixture file, read from it and then close it. 
 
 ## Author Contact
 [alexandra.julius@gmail.com](mailto:alexandra.julius@gmail.com)
