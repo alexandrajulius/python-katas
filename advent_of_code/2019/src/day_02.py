@@ -25,7 +25,7 @@
 
 
 from typing import List, Generator
-import re
+
 
 def run(intcode:List[int]) -> List[int]:
     for group in slider(intcode, 4):

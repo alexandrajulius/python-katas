@@ -15,8 +15,8 @@
 # by wishing really hard, which has no mass and is outside the scope of this calculation.
 
 
-from typing import List, Generator
-import re
+from typing import List
+
 
 def required_fuel_sum(masses:List[int]) -> int:
     fuel = 0
