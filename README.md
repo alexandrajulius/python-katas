@@ -91,6 +91,3 @@ def test_runs_example(fixture_content):
 ```
 
 Using Python's Content Manager (`with` statement) will open the fixture file, read from it and then close it. 
-
-## Author Contact
-[alexandra.julius@gmail.com](mailto:alexandra.julius@gmail.com)
